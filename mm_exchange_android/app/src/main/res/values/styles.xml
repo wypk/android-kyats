@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/font_family</item>
+        <item name="cardViewStyle">@style/CardView.Light</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="HeaderLightTextStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_mini</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CurrencyTextViewStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ExchangeRateTextViewStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="HintLabelStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="CurrencyLongTermLabelStyle">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_x_mini</item>
+    </style>
+
+    <style name="ExchangeRateTextViewStyle2">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:background">@null</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lineSpacingMultiplier">2</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:maxLength">15</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:autoSizeTextType" tools:targetApi="o">uniform</item>
+    </style>
+
+    <style name="CircularButtonStyle">
+        <item name="android:background">@drawable/bg_shape_circular_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_xFFFFFF</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/small_h_margin</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/color_x263238</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/color_x263238</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/color_x263238</item>
+    </style>
+
+    <style name="SettingsLabelStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+</resources>

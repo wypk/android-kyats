@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Myanmar Exchange</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">Myanmar Exchange</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="title_fragment_settings">Settings</string>
+    <string name="title_fragment_about">About</string>
+
+    <string name="action_reset">Reset</string>
+
+    <string name="INTERNET_CONNECTION_ERROR">No internet connection.</string>
+
+    <string name="title_activity_convert">Convert</string>
+    <string name="placeholder">…</string>
+    <string name="last_updated">Last updated :</string>
+
+    <string name="myanmar_currency_unit">MMK</string>
+    <string name="myanmar_currency_long_term">Myanmar Kyat</string>
+
+    <string name="nav_item__central_bank_exchange_rate">Central Bank</string>
+    <string name="nav_item__other_banks_exchange_rate">Other Banks</string>
+    <string name="nav_item__settings">Settings</string>
+    <string name="nav_item__about">About</string>
+    <string name="nav_item_title__more">More</string>
+    <string name="nav_item__share">Share</string>
+
+    <string name="title__kbz_bank_exchange_rate">KBZ Bank</string>
+    <string name="title__cb_bank_exchange_rate">CB Bank</string>
+    <string name="title__aya_bank_exchange_rate">AYA Bank</string>
+    <string name="title__mob_bank_exchange_rate">MOB Bank</string>
+    <string name="title__uab_bank_exchange_rate">UAB Bank</string>
+
+    <string name="currency">CURRENCY</string>
+    <string name="buy">BUY</string>
+    <string name="sell">SELL</string>
+
+    <string name="string_0">0</string>
+    <string name="dot">.</string>
+    <string name="string_9">9</string>
+    <string name="string_8">8</string>
+    <string name="string_7">7</string>
+    <string name="string_6">6</string>
+    <string name="string_5">5</string>
+    <string name="string_4">4</string>
+    <string name="string_3">3</string>
+    <string name="string_2">2</string>
+    <string name="string_1">1</string>
+
+    <string name="night_mode">Night mode</string>
+    <string name="default_convert_value">Default convert value</string>
+
+    <string name="premium_feature">Available in premium version.</string>
+    <string name="rate_on_google_play">Rate on Google Play</string>
+    <string name="report_bugs">Report bugs</string>
+    <string name="libraries">Libraries</string>
+
+    <string name="images_credit">Images credit</string>
+    <string name="icons_credit">Icons credit</string>
+</resources>

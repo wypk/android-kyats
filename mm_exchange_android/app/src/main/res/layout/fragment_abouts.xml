@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAbouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_xFFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rlLibraries"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvLibraries"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_libraries"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvLibraries"
+                    android:text="@string/libraries" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlReportBugs"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/rlLibraries"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvBugs"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_bugs"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvBugs"
+                    android:text="@string/report_bugs" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlRateOnGPlay"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/rlReportBugs"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvRate"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_rating"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvRate"
+                    android:text="@string/rate_on_google_play" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvAbouts"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_xFFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rlIconsCredit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvIconCredit"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_creative_commons"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvIconCredit"
+                    android:text="@string/icons_credit" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPicsCredit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/rlIconsCredit"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvPicsCredit"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_creative_commons"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvPicsCredit"
+                    android:text="@string/images_credit" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

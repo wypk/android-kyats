@@ -1,0 +1,33 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="small_h_margin">8dp</dimen>
+    <dimen name="small_v_margin">8dp</dimen>
+
+    <dimen name="x_small_v_margin">4dp</dimen>
+    <dimen name="x_small_h_margin">4dp</dimen>
+
+    <dimen name="width_1_img_view">48dp</dimen>
+    <dimen name="height_1_img_view">48dp</dimen>
+
+    <dimen name="margin_between_buy_and_sell">40dp</dimen>
+
+    <dimen name="text_size_x_mini">10sp</dimen>
+    <dimen name="text_size_mini">12sp</dimen>
+    <dimen name="text_size_regular">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+
+    <dimen name="splash_screen_imv_width">80dp</dimen>
+    <dimen name="splash_screen_imv_height">80dp</dimen>
+
+    <dimen name="circular_btn_width">58dp</dimen>
+    <dimen name="circular_btn_height">58dp</dimen>
+
+    <dimen name="icon_width">32dp</dimen>
+    <dimen name="icon_height">32dp</dimen>
+</resources>

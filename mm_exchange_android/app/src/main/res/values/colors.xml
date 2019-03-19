@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f9a825</color>
+    <color name="colorPrimaryDark">#f9a825</color>
+    <color name="colorAccent">#f9a825</color>
+
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#666666</color>
+    <color name="color_xFFFFFF">#FFFFFF</color>
+    <color name="color_x263238">#263238</color>
+
+    <color name="green_A700">#388E3C</color>
+    <color name="red_A700">#D50000</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+</resources>

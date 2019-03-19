@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_xFFFFFF"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rlDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvDarkTheme"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_night_mode"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblNightMode"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvDarkTheme"
+                    android:text="@string/night_mode" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchBtnDarkMode"
+                    style="@style/SwitchTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/lblNightMode"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDefaultConvertValue"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/rlDarkMode"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imvDefaultConvertValue"
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="32dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_default_convert_value"
+                    tools:ignore="VectorDrawableCompat"
+                    tools:targetApi="lollipop" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lblDefaultConvertValue"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/imvDefaultConvertValue"
+                    android:text="@string/default_convert_value" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txvDefaultConvertValue"
+                    style="@style/SettingsLabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@id/lblDefaultConvertValue"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/string_1" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

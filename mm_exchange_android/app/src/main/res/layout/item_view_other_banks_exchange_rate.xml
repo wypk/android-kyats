@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_centerVertical="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/small_v_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/small_v_margin">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblCurrency"
+        style="@style/CurrencyTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/placeholder"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+
+    <LinearLayout
+        android:id="@+id/llBuyRate"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/llSellRate"
+        android:gravity="end"
+        android:orientation="vertical"
+        tools:ignore="RelativeOverlap"
+        tools:targetApi="lollipop">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvBuyRate"
+            style="@style/ExchangeRateTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            android:textColor="@color/green_A700"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CurrencyLongTermLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/myanmar_currency_unit"
+            tools:ignore="RelativeOverlap" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSellRate"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_between_buy_and_sell"
+        android:gravity="end"
+        android:orientation="vertical"
+        tools:targetApi="lollipop">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvSellRate"
+            style="@style/ExchangeRateTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            android:textColor="@color/red_A700"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CurrencyLongTermLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/myanmar_currency_unit"
+            tools:ignore="RelativeOverlap" />
+
+    </LinearLayout>
+
+</RelativeLayout>

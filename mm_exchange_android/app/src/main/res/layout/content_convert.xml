@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_convert">
+
+    <RelativeLayout
+        android:id="@+id/rlOtherCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:targetApi="lollipop">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvOtherFlag"
+            android:layout_width="@dimen/width_1_img_view"
+            android:layout_height="@dimen/height_1_img_view"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_v_margin"
+            android:layout_marginRight="@dimen/small_v_margin"
+            android:gravity="start"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_flag_mmk" />
+
+        <RelativeLayout
+            android:id="@+id/rlOtherRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_v_margin"
+            android:layout_marginRight="@dimen/small_v_margin"
+            android:layout_toEndOf="@id/imvOtherFlag"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lblOtherCurrency"
+                style="@style/CurrencyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/placeholder"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvOtherExchangeRate"
+                style="@style/ExchangeRateTextViewStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x_small_h_margin"
+                android:gravity="end"
+                android:text="@string/placeholder"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblOtherCurrencyLongTerm"
+            style="@style/CurrencyLongTermLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlOtherRate"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_v_margin"
+            android:layout_marginRight="@dimen/small_v_margin"
+            android:layout_toEndOf="@id/imvOtherFlag"
+            android:text="@string/placeholder" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vwLine"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/rlOtherCurrency"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/small_v_margin"
+        android:background="@color/grey_300"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:id="@+id/rlMyanmarCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/vwLine"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:targetApi="lollipop">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvMyanmarFlag"
+            android:layout_width="@dimen/width_1_img_view"
+            android:layout_height="@dimen/height_1_img_view"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_v_margin"
+            android:layout_marginRight="@dimen/small_v_margin"
+            android:gravity="start"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_flag_mmk" />
+
+        <RelativeLayout
+            android:id="@+id/rlMyanmarRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_v_margin"
+            android:layout_marginRight="@dimen/small_v_margin"
+            android:layout_toEndOf="@id/imvMyanmarFlag"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CurrencyTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/myanmar_currency_unit"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvMyanmarExchangeRate"
+                style="@style/ExchangeRateTextViewStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/x_small_h_margin"
+                android:gravity="end"
+                android:text="@string/placeholder"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CurrencyLongTermLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlMyanmarRate"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_v_margin"
+            android:layout_marginRight="@dimen/small_v_margin"
+            android:layout_toEndOf="@id/imvMyanmarFlag"
+            android:text="@string/myanmar_currency_long_term" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vwLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/rlMyanmarCurrency"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/small_v_margin"
+        android:background="@color/grey_300"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/vwLine1"
+        android:layout_marginBottom="@dimen/small_v_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/small_v_margin"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/rlOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x_small_v_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/small_v_margin">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentStart="true"
+                android:onClick="onClickOne"
+                android:text="@string/string_1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_centerInParent="true"
+                android:onClick="onClickTwo"
+                android:text="@string/string_2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClickThree"
+                android:text="@string/string_3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlOne"
+            android:layout_marginBottom="@dimen/x_small_v_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/x_small_v_margin">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentStart="true"
+                android:onClick="onClickFour"
+                android:text="@string/string_4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_centerInParent="true"
+                android:onClick="onClickFive"
+                android:text="@string/string_5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClickSix"
+                android:text="@string/string_6" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlTwo"
+            android:layout_marginBottom="@dimen/x_small_v_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/x_small_v_margin">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentStart="true"
+                android:onClick="onClickSeven"
+                android:text="@string/string_7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_centerInParent="true"
+                android:onClick="onClickEight"
+                android:text="@string/string_8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClickNine"
+                android:text="@string/string_9" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlThree"
+            android:layout_marginBottom="@dimen/x_small_v_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/x_small_v_margin">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentStart="true"
+                android:onClick="onClickPoint"
+                android:text="@string/dot" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_centerInParent="true"
+                android:onClick="onClickZero"
+                android:text="@string/string_0" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnDel"
+                style="@style/CircularButtonStyle"
+                android:layout_width="@dimen/circular_btn_width"
+                android:layout_height="@dimen/circular_btn_height"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClickDelete"
+                android:src="@drawable/ic_delete" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

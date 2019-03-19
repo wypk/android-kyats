@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_central_bank_exchange"
+            android:icon="@drawable/ic_menu_exchange_rate"
+            android:iconTint="@android:color/transparent"
+            android:title="@string/nav_item__central_bank_exchange_rate"
+            tools:targetApi="o" />
+        <item
+            android:id="@+id/nav_other_banks_exchange"
+            android:icon="@drawable/ic_menu_exchange_rate"
+            android:iconTint="@android:color/transparent"
+            android:title="@string/nav_item__other_banks_exchange_rate"
+            tools:targetApi="o" />
+    </group>
+
+    <item android:title="@string/nav_item_title__more">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings"
+                android:iconTint="@android:color/transparent"
+                android:title="@string/nav_item__settings"
+                tools:targetApi="o" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_about"
+                android:iconTint="@android:color/transparent"
+                android:title="@string/nav_item__about"
+                tools:targetApi="o" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:iconTint="@android:color/transparent"
+                android:title="@string/nav_item__share"
+                tools:targetApi="o" />
+        </menu>
+    </item>
+</menu>

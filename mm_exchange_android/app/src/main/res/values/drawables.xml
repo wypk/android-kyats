@@ -1,0 +1,6 @@
+<resources>
+    <item name="ic_menu_exchange_rate" type="drawable">@drawable/ic_menu_exchange_rate</item>
+    <item name="ic_menu_settings" type="drawable">@drawable/ic_menu_settings</item>
+    <item name="ic_menu_about" type="drawable">@drawable/ic_menu_about</item>
+    <item name="ic_menu_share" type="drawable">@drawable/ic_menu_share</item>
+</resources>

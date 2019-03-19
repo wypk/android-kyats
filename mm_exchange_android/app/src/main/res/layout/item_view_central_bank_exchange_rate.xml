@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_centerVertical="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="@dimen/small_v_margin"
+    android:paddingBottom="@dimen/small_v_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:targetApi="lollipop">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imvFlag"
+        android:layout_width="@dimen/width_1_img_view"
+        android:layout_height="@dimen/height_1_img_view"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="start"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_flag_mmk" />
+
+    <RelativeLayout
+        android:id="@+id/rlRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_h_margin"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imvFlag"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblCurrency"
+            style="@style/CurrencyTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvExchangeRate"
+            style="@style/ExchangeRateTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x_small_h_margin"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlRate"
+        android:layout_marginStart="@dimen/small_h_margin"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imvFlag"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblCurrencyLongTerm"
+            style="@style/CurrencyLongTermLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/placeholder" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CurrencyLongTermLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x_small_h_margin"
+            android:gravity="end"
+            android:text="@string/myanmar_currency_unit"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+</RelativeLayout>

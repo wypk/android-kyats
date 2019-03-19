@@ -1,2 +1,2 @@
-# android-kyats
-Myanmar exchange rates
+# Myanmar exchange rates
+

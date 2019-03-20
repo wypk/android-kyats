@@ -1,3 +1,17 @@
+<!--
+  ~ Copyright 2019 Wai Yan - (09 97777 3 444).
+  ~ All rights reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <vector android:height="24dp" android:viewportHeight="513.067"
     android:viewportWidth="513.067" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#FF7058" android:pathData="M491.733,97.067c-2.133,-8.533 -6.4,-17.067 -10.667,-24.533l8.533,-20.267l-28.8,-30.933l-20.267,8.533C433.067,25.6 424.533,22.4 416,19.2L406.4,0h-42.667L355.2,20.267c-8.533,2.133 -17.067,6.4 -24.533,10.667L310.4,22.4l-29.867,29.867l8.533,20.267C284.8,80 281.6,88.533 278.4,97.067l-20.267,8.533v42.667L278.4,156.8c2.133,8.533 6.4,17.067 10.667,24.533l-8.533,20.267l29.867,29.867l20.267,-8.533c7.467,4.267 16,7.467 24.533,10.667l8.533,20.267H406.4l8.533,-20.267c8.533,-2.133 17.067,-6.4 24.533,-10.667l20.267,8.533L489.6,201.6l-8.533,-20.267c4.267,-7.467 7.467,-16 10.667,-24.533L512,148.267V105.6L491.733,97.067zM386.133,178.133c-28.8,0 -52.267,-23.467 -52.267,-51.2s23.467,-52.267 52.267,-52.267c28.8,0 52.267,23.467 52.267,51.2C438.4,154.667 414.933,178.133 386.133,178.133z"/>

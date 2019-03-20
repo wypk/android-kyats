@@ -1,3 +1,17 @@
+<!--
+  ~ Copyright 2019 Wai Yan - (09 97777 3 444).
+  ~ All rights reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <vector android:height="24dp" android:viewportHeight="512"
     android:viewportWidth="512" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#263238" android:pathData="M122.551,278.402c-12.566,0 -22.789,10.222 -22.789,22.787s10.223,22.787 22.789,22.787c12.565,0 22.787,-10.222 22.787,-22.787S135.115,278.402 122.551,278.402zM122.551,308.949c-4.278,0 -7.759,-3.481 -7.759,-7.758s3.481,-7.758 7.759,-7.758c4.278,0 7.758,3.481 7.758,7.758S126.828,308.949 122.551,308.949z"/>

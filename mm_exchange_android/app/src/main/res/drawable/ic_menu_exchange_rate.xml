@@ -1,3 +1,17 @@
+<!--
+  ~ Copyright 2019 Wai Yan - (09 97777 3 444).
+  ~ All rights reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <vector android:height="24dp" android:viewportHeight="360"
     android:viewportWidth="360" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#FFDA44" android:pathData="M95.734,225.5v-18.836c-7.404,-0.643 -14.731,-2.143 -21.975,-4.505c-7.243,-2.359 -13.765,-5.473 -19.559,-9.34l11.59,-23.021c0.43,0.541 1.582,1.427 3.462,2.656c1.875,1.238 4.267,2.522 7.163,3.862c2.896,1.349 6.171,2.632 9.819,3.869c3.649,1.232 7.407,2.117 11.269,2.655v-21.41l-7.727,-2.257c-5.26,-1.61 -9.82,-3.355 -13.682,-5.23c-3.865,-1.878 -7.06,-4.052 -9.579,-6.518c-2.522,-2.469 -4.403,-5.316 -5.636,-8.533c-1.233,-3.221 -1.852,-6.979 -1.852,-11.272c0,-5.579 0.966,-10.541 2.9,-14.891c1.931,-4.344 4.531,-8.07 7.807,-11.188c3.272,-3.111 7.135,-5.55 11.591,-7.321c4.451,-1.771 9.255,-2.924 14.407,-3.464V74.5H100V50C44.773,50 0,94.77 0,150s44.773,100 100,100v-24.5H95.734z"/>

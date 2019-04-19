@@ -16,8 +16,8 @@ package wyp.kyats.domain.otherbanks.webpageparser;
 
 import android.os.AsyncTask;
 
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,20 +54,65 @@ public class KBZExchangeRateParser extends AsyncTask<String, Void, ExchangeRateR
         Document pageDocument = JSoupUtil.getData(KBZ_BANK_URL);
         if (pageDocument != null) {
 
-            updatedDate =  pageDocument.select("div[class=row exchange-rate]").select("div[class=col-lg-4 col-sm-4 col-xs-12]").select("strong").text();
+            updatedDate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-1 > div > p.has-text-color.has-vivid-red-color")
+                    .first()
+                    .text();
+            updatedDate = StringUtils.substringAfter(updatedDate, "Date").trim().replace("–", "");
+
             Logger.d(this.getClass(), "KBZ Update Date >> " + updatedDate);
 
-            Elements mElementDataSize = pageDocument.select("div[class=col-lg-2 col-sm-4 col-xs-12]");
-            int mElementSize = mElementDataSize.size();
+            String usdBuyRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-1 > div > p:nth-child(2)")
+                    .get(1)
+                    .text();
+            Logger.d(this.getClass(), "KBZ usdBuyRate >> " + usdBuyRate);
 
-            for (int i = 0; i < mElementSize; i++) {
+            String usdSellRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-1 > div > p:nth-child(3)")
+                    .first()
+                    .text();
+            Logger.d(this.getClass(), "KBZ usdSellRate >> " + usdSellRate);
 
-                Elements rawRateElements = pageDocument.select("div[class=col-lg-2 col-sm-4 col-xs-12]").eq(i);
-                String rawRate = rawRateElements.text();
-                Logger.d(this.getClass(), "KBZ Rate >> " + rawRate);
+            rawRates.add("USD" + usdBuyRate + usdSellRate);
 
-                rawRates.add(rawRate);
-            }
+            String sgdBuyRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-2 > div > p:nth-child(2)")
+                    .first()
+                    .text();
+            Logger.d(this.getClass(), "KBZ sgdBuyRate >> " + sgdBuyRate);
+
+            String sgdSellRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-2 > div > p:nth-child(3)")
+                    .first()
+                    .text();
+            Logger.d(this.getClass(), "KBZ sgdSellRate >> " + sgdSellRate);
+
+            rawRates.add("SGD" + sgdBuyRate + sgdSellRate);
+
+            String eurBuyRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-3 > div > p:nth-child(2)")
+                    .text();
+            Logger.d(this.getClass(), "KBZ eurBuyRate >> " + eurBuyRate);
+
+            String eurSellRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-3 > div > p:nth-child(3)")
+                    .text();
+            Logger.d(this.getClass(), "KBZ eurSellRate >> " + eurSellRate);
+
+            rawRates.add("EUR" + eurBuyRate + eurSellRate);
+
+            String thbBuyRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-4 > div > p:nth-child(2)")
+                    .text();
+            Logger.d(this.getClass(), "KBZ thbBuyRate >> " + thbBuyRate);
+
+            String thbSellRate = pageDocument
+                    .select("div > div.wp-block-kadence-column.inner-column-4 > div > p:nth-child(3)")
+                    .text();
+            Logger.d(this.getClass(), "KBZ thbSellRate >> " + thbSellRate);
+
+            rawRates.add("THB" + thbBuyRate + thbSellRate);
         }
         return new ExchangeRateResponseModel(updatedDate, rawRates);
     }

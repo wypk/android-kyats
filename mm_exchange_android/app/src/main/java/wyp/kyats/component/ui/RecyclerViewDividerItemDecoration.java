@@ -19,24 +19,23 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
+import wyp.kyats.R;
 
 public class RecyclerViewDividerItemDecoration extends RecyclerView.ItemDecoration {
 
-    private Drawable divider;
+    private Drawable mDivider;
 
-    /**
-     * Custom divider will be used
-     */
-    public RecyclerViewDividerItemDecoration(Context context,@DrawableRes int resId) {
-        divider = ContextCompat.getDrawable(context, resId);
+    public RecyclerViewDividerItemDecoration(Context context) {
+        mDivider = context.getResources().getDrawable(R.drawable.view_divider);
     }
 
     @Override
-    public void onDraw(@NonNull Canvas c, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
+    public void onDrawOver(@NonNull Canvas c,
+            @NonNull RecyclerView parent,
+            @NonNull RecyclerView.State state) {
+
         int left = parent.getPaddingLeft();
         int right = parent.getWidth() - parent.getPaddingRight();
 
@@ -47,10 +46,10 @@ public class RecyclerViewDividerItemDecoration extends RecyclerView.ItemDecorati
             RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
 
             int top = child.getBottom() + params.bottomMargin;
-            int bottom = top + divider.getIntrinsicHeight();
+            int bottom = top + mDivider.getIntrinsicHeight();
 
-            divider.setBounds(left, top, right, bottom);
-            divider.draw(c);
+            mDivider.setBounds(left, top, right, bottom);
+            mDivider.draw(c);
         }
     }
 }

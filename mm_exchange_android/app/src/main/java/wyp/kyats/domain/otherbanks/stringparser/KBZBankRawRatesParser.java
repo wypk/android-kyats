@@ -25,10 +25,13 @@ public class KBZBankRawRatesParser {
 
     public static ExchangeRateModel parse(String rawRate) {
 
-        String currency = StringUtils.substringBefore(rawRate,"BUY").trim();
-        String buyRate = StringUtils.substringBetween(rawRate,"BUY","SELL").trim();
-        String sellRate = StringUtils.substringAfter(rawRate,"SELL").trim();
+        if (rawRate != null) {
+            String currency = StringUtils.substringBefore(rawRate, "Buy").trim();
+            String buyRate = StringUtils.substringBetween(rawRate, "Buy", "Sell").trim().replace("–", "");
+            String sellRate = StringUtils.substringAfter(rawRate, "Sell").trim().replace("–", "");
 
-        return new ExchangeRateModel(currency, buyRate, sellRate);
+            return new ExchangeRateModel(currency, buyRate, sellRate);
+        }
+        return null;
     }
 }

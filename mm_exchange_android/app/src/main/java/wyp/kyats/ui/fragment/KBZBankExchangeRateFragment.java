@@ -21,13 +21,13 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import wyp.kyats.R;
 import wyp.kyats.cache.otherbanks.OtherBanksExchangeRatesManipulator;
 import wyp.kyats.component.ui.RecyclerViewDividerItemDecoration;
-import wyp.kyats.domain.otherbanks.stringparser.KBZBankRawRatesParser;
-import wyp.kyats.domain.otherbanks.webpageparser.KBZExchangeRateParser;
+import wyp.kyats.component.util.Logger;
 import wyp.kyats.domain.otherbanks.model.ExchangeRateModel;
 import wyp.kyats.domain.otherbanks.model.ExchangeRateResponseModel;
+import wyp.kyats.domain.otherbanks.stringparser.KBZBankRawRatesParser;
+import wyp.kyats.domain.otherbanks.webpageparser.KBZExchangeRateParser;
 import wyp.kyats.foundation.SharedPreferencesConstants;
 import wyp.kyats.ui.adapter.OthersBankExchangeRateRVAdapter;
 
@@ -68,6 +68,7 @@ public class KBZBankExchangeRateFragment extends OtherBanksExchangeRateBaseFragm
 
             lblUpdatedDate.setText(exchangeRateResponseModel.updatedDate);
             List<String> rawRates = exchangeRateResponseModel.rawRate;
+            Logger.d(this.getClass(),"RAW Rates : " + rawRates);
 
             OthersBankExchangeRateRVAdapter othersBankExchangeRateRVAdapter =
                     new OthersBankExchangeRateRVAdapter(getActivity(),
@@ -79,8 +80,7 @@ public class KBZBankExchangeRateFragment extends OtherBanksExchangeRateBaseFragm
             rvExchange.setHasFixedSize(true);
             rvExchange.setLayoutManager(new LinearLayoutManager(getActivity()));
             rvExchange.setAdapter(othersBankExchangeRateRVAdapter);
-            rvExchange.addItemDecoration(
-                    new RecyclerViewDividerItemDecoration(getActivity(), R.drawable.view_divider));
+            rvExchange.addItemDecoration(new RecyclerViewDividerItemDecoration(getActivity()));
 
             List<OthersBankExchangeRateRVAdapter.Model> models = new ArrayList<>();
 

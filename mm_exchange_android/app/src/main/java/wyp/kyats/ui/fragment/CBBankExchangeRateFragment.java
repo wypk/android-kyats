@@ -21,13 +21,12 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import wyp.kyats.R;
 import wyp.kyats.cache.otherbanks.OtherBanksExchangeRatesManipulator;
 import wyp.kyats.component.ui.RecyclerViewDividerItemDecoration;
-import wyp.kyats.domain.otherbanks.webpageparser.CBExchangeRateParser;
 import wyp.kyats.domain.otherbanks.model.ExchangeRateModel;
 import wyp.kyats.domain.otherbanks.model.ExchangeRateResponseModel;
 import wyp.kyats.domain.otherbanks.stringparser.CommonRawRatesParser;
+import wyp.kyats.domain.otherbanks.webpageparser.CBExchangeRateParser;
 import wyp.kyats.foundation.SharedPreferencesConstants;
 import wyp.kyats.ui.adapter.OthersBankExchangeRateRVAdapter;
 
@@ -84,8 +83,7 @@ public class CBBankExchangeRateFragment extends OtherBanksExchangeRateBaseFragme
             rvExchange.setHasFixedSize(true);
             rvExchange.setLayoutManager(new LinearLayoutManager(getActivity()));
             rvExchange.setAdapter(othersBankExchangeRateRVAdapter);
-            rvExchange.addItemDecoration(
-                    new RecyclerViewDividerItemDecoration(getActivity(), R.drawable.view_divider));
+            rvExchange.addItemDecoration(new RecyclerViewDividerItemDecoration(getActivity()));
 
             List<OthersBankExchangeRateRVAdapter.Model> models = new ArrayList<>();
 

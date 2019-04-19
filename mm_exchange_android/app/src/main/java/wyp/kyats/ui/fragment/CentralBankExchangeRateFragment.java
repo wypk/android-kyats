@@ -145,7 +145,7 @@ public class CentralBankExchangeRateFragment extends BaseFragment {
         rvExchange.setHasFixedSize(true);
         rvExchange.setLayoutManager(new LinearLayoutManager(getActivity()));
         rvExchange.setAdapter(centralBankExchangeRateRVAdapter);
-        rvExchange.addItemDecoration(new RecyclerViewDividerItemDecoration(getActivity(), R.drawable.view_divider));
+        rvExchange.addItemDecoration(new RecyclerViewDividerItemDecoration(getActivity()));
 
         List<Model> models = new ArrayList<>();
 
